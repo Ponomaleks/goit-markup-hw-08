@@ -1,0 +1,45 @@
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 250ms;
+
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  background-color: var(--main-lite-color);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms var(--time-function);
+}
+
+.close_modal-btn_button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: var(--main-lite-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  transition: fill 250ms var(--time-function);
+
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}

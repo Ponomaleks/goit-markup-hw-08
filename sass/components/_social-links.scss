@@ -1,0 +1,49 @@
+.social-links-list {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+.team__social-link {
+  color: var(--icon-color);
+  transition: background-color 250ms var(--time-function),
+    color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-lite-color);
+  }
+}
+
+.social-link-icon {
+  fill: currentColor;
+}
+
+.footer-social-links-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-link {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-social-link-icon {
+  fill: var(--main-lite-color);
+}

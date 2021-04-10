@@ -1,0 +1,25 @@
+.hero {
+  background-color: var(--background-dark-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-bcgr-img.jpg);
+  padding: 200px 0;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-lite-color);
+  width: 696px;
+  text-align: center;
+  margin: 0 auto;
+}
