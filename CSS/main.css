@@ -70,7 +70,6 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -630,24 +629,43 @@ form .modal-btn {
 
 .hero {
   background-color: var(--background-dark-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bcgr-img.jpg);
-  padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/mobile/hero-bcgr-mobile.jpg);
+  padding: 118px 0;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/desktop/hero-bcgr-desktop.jpg);
+    padding: 200px 0;
+  }
+}
+
 .main-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-lite-color);
-  width: 696px;
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .main-title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .about-list {
