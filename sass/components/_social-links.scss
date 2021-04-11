@@ -1,7 +1,13 @@
 .social-links-list {
   display: flex;
   margin-top: 16px;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-link-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-link {

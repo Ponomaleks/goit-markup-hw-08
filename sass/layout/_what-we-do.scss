@@ -1,5 +1,8 @@
 .section + .what-we-do {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .we-do-list {
