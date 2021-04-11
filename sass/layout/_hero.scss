@@ -4,12 +4,20 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero/mobile/hero-bcgr-mobile.jpg);
+    url(../images/hero/mobile/hero-bcgr-mobile.jpg);
   padding: 118px 0;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/tablet/hero-bcgr-tablet.jpg);
+  }
 
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
@@ -38,5 +46,6 @@
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
+    line-height: 1.36;
   }
 }

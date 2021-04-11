@@ -66,12 +66,36 @@ body {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+
+@media screen and (min-wdth: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .container {
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .footer .container {
@@ -629,12 +653,18 @@ form .modal-btn {
 
 .hero {
   background-color: var(--background-dark-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/mobile/hero-bcgr-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mobile/hero-bcgr-mobile.jpg);
   padding: 118px 0;
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/tablet/hero-bcgr-tablet.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -665,19 +695,37 @@ form .modal-btn {
   .main-title {
     width: 696px;
     font-size: 44px;
+    line-height: 1.36;
   }
 }
 
-.about-list {
-  display: flex;
-}
-
-.about-element {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-element:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-element {
+    width: 354px;
+  }
+  .about-element:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-element {
+    width: 270px;
+  }
+  .about-element:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-img-containers {
@@ -692,14 +740,22 @@ form .modal-btn {
 
 .about-list-item {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-list-item {
+    text-align: center;
+  }
+}
+
 .about-list-text {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);

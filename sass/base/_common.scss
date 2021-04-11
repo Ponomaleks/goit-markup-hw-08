@@ -41,5 +41,8 @@ body {
 }
 
 .section {
+  padding: 60px 0px;
+  @media screen and (min-wdth: 1200px) {
   padding: 94px 0px;
+  }
 }
