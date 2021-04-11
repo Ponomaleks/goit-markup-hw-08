@@ -136,15 +136,10 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .title {
-    margin: 0 auto 50px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -835,7 +830,6 @@ form .modal-btn {
 
 @media screen and (min-width: 768px) {
   .team-member-card {
-    width: 354px;
     margin-left: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
@@ -844,7 +838,6 @@ form .modal-btn {
 @media screen and (min-width: 1200px) {
   .team-member-card {
     flex-basis: calc(100% / 4 - 30px);
-    width: 270px;
   }
 }
 
@@ -880,17 +873,46 @@ form .modal-btn {
   background-color: var(--background-light-color);
 }
 
-.clients-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 480px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    justify-content: center;
+  }
+}
+
+.client-item {
+  margin-top: 30px;
+  height: 90px;
+}
+
+@media screen and (min-width: 480px) {
+  .client-item {
+    margin-left: 30px;
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-item {
+    width: 170px;
+  }
 }
 
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
+  height: 100%;
+  width: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
