@@ -4,7 +4,12 @@
 }
 
 .internal-links {
-  margin-right: 70px;
+  @media screen and (min-width: 767px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-contacts-list {
@@ -42,20 +47,37 @@
 
 .footer-contacts-list-item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
 }
 
 .join-us-links-list {
   width: 206px;
   height: 80px;
+
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .join-us-caption {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--main-lite-color);
+}
+
+.footer__links-container {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
