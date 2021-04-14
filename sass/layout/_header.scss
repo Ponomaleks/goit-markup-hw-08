@@ -19,9 +19,9 @@
 }
 
 .mobile-menu-close-btn {
-  // position: absolute;
-  // top: 10px;
-  // right: 15px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .mobile-menu {
@@ -30,7 +30,7 @@
   left: 0;
   // left: 50%;
   width: 100vw;
-  max-width: 480px;
+  // max-width: 480px;
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--main-lite-color);
