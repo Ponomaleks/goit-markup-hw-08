@@ -1,4 +1,7 @@
 .container {
+  margin: 0 auto;
+  padding: 0 15px;
+
   @media screen and(min-width: 480px) {
     width: 480px;
   }
@@ -11,12 +14,8 @@
     width: 1200px;
   }
 
-  margin: 0 auto;
-  padding: 0 15px;
-
   .footer & {
     display: flex;
-
     align-items: center;
     text-align: center;
 
@@ -27,6 +26,14 @@
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header & {
+      width: 100%;
+      margin: 0 0;
+      justify-content: space-between;
     }
   }
 }
