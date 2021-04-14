@@ -364,8 +364,8 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--main-lite-color);
   left: 50%;
   top: 50%;
@@ -373,6 +373,13 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--time-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close_modal-btn_button {
@@ -430,10 +437,17 @@ body {
   align-items: center;
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+
+@media screen and (1200px) {
+  .acceptanse {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .acceptanse::before {
@@ -465,10 +479,17 @@ body {
 .terms-link {
   font-family: inherit;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+@media screen and (1200px) {
+  .terms-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form_label {
@@ -519,6 +540,8 @@ form .modal-btn {
 
 .modal-form_textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+  font-size: 14px;
+  line-height: 1.17;
 }
 
 .modal-checkbox_line {
@@ -529,8 +552,21 @@ form .modal-btn {
 
 .portfolio-btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn-list {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn {
@@ -545,6 +581,13 @@ form .modal-btn {
   border-radius: 4px;
   padding: 6px 22px;
   transition: color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn {
+    margin-bottom: unset;
+  }
 }
 
 .portfolio-btn:hover, .portfolio-btn:focus {
@@ -558,21 +601,37 @@ form .modal-btn {
   margin-right: 8px;
 }
 
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .portfolio-list-item {
-  margin-left: 30px;
+  display: flex;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list-item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .portfolio-item-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow 250ms var(--time-function);
 }
 
@@ -584,13 +643,14 @@ form .modal-btn {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .portfolio-item {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--main-color);
 }
@@ -609,25 +669,30 @@ form .modal-btn {
 
 .portfolio_overlay {
   position: absolute;
-  height: 294px;
+  height: 100%;
+  width: 100%;
   left: 0;
   top: 0;
   transform: translateY(101%);
   transition: transform 250ms;
   background: rgba(33, 150, 243, 0.9);
-  width: 370px;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   vertical-align: top;
   letter-spacing: 0.03em;
   color: var(--main-lite-color);
-  overflow: auto;
 }
 
 .portfolio-item-link:hover .portfolio_overlay,
 .portfolio-item-link:focus .portfolio_overlay {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio_overlay {
+    padding: 63px 24px;
+  }
 }
 
 .header {
