@@ -176,6 +176,7 @@
     visibility: hidden;
     pointer-events: none;
     overflow: auto;
+    z-index: 10;
   }
 
   & .is-open {

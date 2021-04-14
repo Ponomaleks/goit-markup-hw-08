@@ -875,6 +875,7 @@ form .modal-btn {
     visibility: hidden;
     pointer-events: none;
     overflow: auto;
+    z-index: 10;
   }
   .is-open {
     opacity: 1;
