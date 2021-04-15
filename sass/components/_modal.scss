@@ -12,6 +12,7 @@
 .modal {
   position: absolute;
   width: 100vw;
+  max-height: 100vh;
   background-color: var(--main-lite-color);
   left: 50%;
   top: 50%;
