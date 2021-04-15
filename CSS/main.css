@@ -929,6 +929,7 @@ form .modal-btn {
   }
   .mobile-menu__social-list {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile-menu__social-list-item:not(:last-child) {
     height: 22px;
