@@ -11,8 +11,7 @@
 
 .modal {
   position: absolute;
-  width: 450px;
-  height: 609px;
+  width: 100vw;
   background-color: var(--main-lite-color);
   left: 50%;
   top: 50%;
@@ -21,6 +20,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--time-function);
+
+  @media screen and(min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
 
   @media screen and(min-width: 1200px) {
     width: 528px;
