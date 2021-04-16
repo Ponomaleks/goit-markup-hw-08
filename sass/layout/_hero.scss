@@ -7,6 +7,7 @@
     url(../images/hero/mobile/hero-bcgr-mobile.jpg);
   padding: 118px 0;
   max-width: 1600px;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,6 +28,7 @@
       ),
       url(../images/hero/desktop/hero-bcgr-desktop.jpg);
     padding: 200px 0;
+    height: 600px;
   }
 }
 

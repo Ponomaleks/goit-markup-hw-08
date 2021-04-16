@@ -12,10 +12,16 @@
   }
 
   .header & {
-    margin-right: 93px;
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
+    // margin-right: 93px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   .footer & {

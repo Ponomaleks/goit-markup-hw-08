@@ -35,7 +35,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-
+  flex-wrap: wrap;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 
@@ -78,7 +78,7 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-
+  white-space: normal;
   @media screen and( 1200px) {
     font-size: 14px;
     line-height: 1.71;
