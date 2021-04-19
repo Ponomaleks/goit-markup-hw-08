@@ -472,7 +472,14 @@ body {
   color: var(--secondary-color);
 }
 
-@media screen and (1200px) {
+@media screen and (max-width: 479px) {
+  .acceptanse {
+    font-size: 11px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .acceptanse {
     font-size: 14px;
     line-height: 1.71;
@@ -515,7 +522,14 @@ body {
   white-space: normal;
 }
 
-@media screen and (1200px) {
+@media screen and (max-width: 479px) {
+  .terms-link {
+    font-size: 11px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .terms-link {
     font-size: 14px;
     line-height: 1.71;
@@ -727,8 +741,8 @@ form .modal-btn {
 
 @media screen and (max-width: 480px) {
   .portfolio_overlay {
-    padding: 48px 20px;
-    font-size: 16px;
+    padding: 14px 20px;
+    font-size: 15px;
     overflow: auto;
   }
 }
@@ -828,13 +842,13 @@ form .modal-btn {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contact:first-child {
+  .header-contact > a[href='mailto:info@devstudio.com'] {
     padding-top: 21px;
     padding-bottom: 5px;
   }
-  .header-contact:last-child {
-    padding-top: 5px;
+  .header-contact > a[href='tel:+380961111111'] {
     padding-bottom: 21px;
+    padding-top: 5px;
   }
 }
 
